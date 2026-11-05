@@ -2,6 +2,17 @@
 
 > iPhone 虚拟定位工作台 —— 用 Rust 重写 `pymobiledevice3` 的定位链路,配一个漂亮的可视化界面。
 
+<p align="center">
+  <img src="docs/screenshot.png" alt="RUSH Locator 界面截图" width="100%" />
+</p>
+
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT" /></a>
+  <img src="https://img.shields.io/badge/platform-macOS%20%7C%20Windows%20%7C%20Linux-lightgrey.svg" alt="Platform" />
+  <img src="https://img.shields.io/badge/iOS-17%20–%2026-success.svg" alt="iOS 17-26" />
+  <img src="https://img.shields.io/badge/Rust-1.99%2B-orange.svg" alt="Rust 1.99+" />
+</p>
+
 基于 **Tauri 2 + React + MapLibre** 的跨平台桌面应用(macOS / Windows / Linux),
 通过纯 Rust 协议栈与 iOS 设备通信,在**无需 root、无需 Xcode、无需 pymobiledevice3** 的前提下:
 
