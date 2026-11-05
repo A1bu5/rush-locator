@@ -1,0 +1,41 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1220"/>
+      <stop offset="100%" stop-color="#101a2e"/>
+    </linearGradient>
+    <linearGradient id="pin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="55%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="26" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- 圆角背景 -->
+  <rect x="0" y="0" width="1024" height="1024" rx="232" fill="url(#bg)"/>
+  <rect x="14" y="14" width="996" height="996" rx="220" fill="none" stroke="#1e293b" stroke-width="6"/>
+
+  <!-- 脉冲圆环 -->
+  <circle cx="512" cy="486" r="300" fill="none" stroke="#22d3ee" stroke-opacity="0.16" stroke-width="16"/>
+  <circle cx="512" cy="486" r="228" fill="none" stroke="#22d3ee" stroke-opacity="0.28" stroke-width="14"/>
+
+  <!-- 定位图钉 -->
+  <g filter="url(#glow)">
+    <path d="M512 178c-118 0-214 96-214 214 0 160 214 372 214 372s214-212 214-372c0-118-96-214-214-214z"
+          fill="url(#pin)"/>
+  </g>
+  <circle cx="512" cy="392" r="86" fill="#0b1220"/>
+  <circle cx="512" cy="392" r="52" fill="#22d3ee"/>
+
+  <!-- 轨迹点缀 -->
+  <path d="M212 794c118-60 200-52 300 6 100 58 182 66 300 6"
+        fill="none" stroke="#818cf8" stroke-width="22" stroke-linecap="round"
+        stroke-dasharray="4 44" opacity="0.85"/>
+</svg>
